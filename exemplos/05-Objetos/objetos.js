@@ -3,6 +3,13 @@
 
 // 1ª Digitação (Aqui)
 
+let atriz = { //Declaração de um objeto chamado "atriz"
+    nome: 'Angelina Jolie',
+    nascimento: 1975, //Propriedade nascimento com valor 1975
+    filmes: 60,
+    nacionalidade: 'Estados Unidos'
+};
+
 
 // Recuperando os valores
 document.write('<h2 style="color: blue;">Usando Sintaxe de objeto básico</h2><br>');
@@ -25,6 +32,21 @@ document.write('<h2 style="color: blue;">Objeto contendo array e outro objeto</h
 
 // 2ª Digitação (Aqui)
 
+let celebridade = { // Objeto um "celebridade"
+    nome: 'Scarlett Johansson',
+    idade: 37,
+    sexo: 'feminino',
+    filmes: ['Lost in translation', 'The Avengers', 'Marriage Story'], // Array
+    cidade: 'Nova york',
+    medidas: { // Objeto dois "medidas"
+        peso: 57,
+        altura: 1.60,
+    }
+};
+
+document.write(`Altura da celebridade: <strong>${celebridade.medidas.altura}</strong>.<br>`);
+
+document.write(`<strong>${celebridade.nome}</strong> é uma atriz incrível, assista o filme: <strong> ${celebridade.filmes[2]}</strong>.<br>`);
 
 document.write("__________________________________________________________________<br>");
 
@@ -36,5 +58,19 @@ document.write('<h2 style="color: blue;">Array do objeto</h2><br>');
 
 // 3ª Digitação (Aqui)
 
+let filmesFamosos = [
+    {
+        titulo: 'Pulp Fiction',
+        diretor: 'Quentin Tarantino',
+    },
+    {
+        titulo: 'The Godfather',
+        diretor: 'Fracis Ford Coppola',
+    },
+    {
+        titulo: 'Inception',
+        diretor: 'Christopher Nolan',
+    }
+];
 
 
