@@ -20,6 +20,12 @@ document.write('<h2 style="color: blue;">Função nomeada (Tradicional)</h2><br>
 Função nomeada */
 
 // 1ª Digitação (Aqui)
+function exemplo2() {
+    document.write("Função nomeada <br>");
+
+};
+
+exemplo2();
 
 // ________________________________________________________________________
 
@@ -33,14 +39,31 @@ Função Seta/Flecha (Arrow Function) */
 
 
 // 2ª Digitação (Aqui)
+let exemplo3 = () => 
+    document.write("Arrow Function <br>");
+
+exemplo3();
+
 
 
 // _______________________ 3B
 
 
 // 3ª Digitação (Aqui)
+// Função para dobrar o valor
+function dobra(valor) {
+    return valor * 2;
+}
 
+document.write( dobra(10));
+document.write("<br>");
 
+// Função para multiplicar o valor (Sintaxe Arrow Function)
+
+let dobraB = valor => valor * 300;
+
+document.write( dobraB(20) );
+document.write("<br>");
 // ________________________________________________________________________
 
 document.write("__________________________________________________________________<br>");
@@ -54,7 +77,12 @@ Função para dobrar */
 
 
 // 4ª Digitação (Aqui)
+// // Função para dobrar o valor (Sintaxe Arrow Function)
 
+// let dobraB = valor => valor * 300;
+
+// document.write( dobraB(20) );
+// document.write("<br>");
 
 // ________________ Usando "Arrow Function"
 
@@ -84,6 +112,19 @@ let precoFinal = preco - desconto;
 
 
 // 6ª Digitação (Aqui)
+// Formatar para Dolar $
+function formataMoeda(valor) {
+    return valor.toLocaleString ( 'en', {
+        style: 'currency', currency: 'USD'
+    });
+}
+
+// Formatar para real R$ (Sintaxe Arrow Function)
+let formataValor = valor => {
+    return valor.toLocaleString ( 'pt-br', {
+        style: 'currency', currency: 'BRL'
+    });
+}
 
 
 document.write( formataMoeda(preco) );
